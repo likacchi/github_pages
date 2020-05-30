@@ -1,0 +1,85 @@
+body {
+    background-color: #212121;
+    color: #ffffff;
+  }
+  
+  .sessao {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+  }
+  
+  .sessao .bloco_esquerda {
+    width: 30%;
+    font-size: 18px;
+  }
+  
+  .sessao .bloco_esquerda.foto {
+    text-align: center;
+  }
+  
+  .sessao .bloco_direita {
+    width: 70%;
+    margin-left: 10px;
+  }
+  
+  .sessao .bloco_direita .bloco_habilidade {
+    width: 45%;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .sessao .bloco_direita .bloco_habilidade p {
+    background-color: #e3e3e3;
+    color: #212121;
+    margin: 0;  
+    margin-bottom: 5px;  
+  }
+  
+  .sessao .dados_habilidades{  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .sessao .dados_pessoais {  
+    font-size: 26px;
+  }
+  
+  .sessao .dados_pessoais p {  
+    font-size: 12px;
+    margin: 0;
+    margin-top: 5px;
+  }
+  
+  .rodape {
+    margin-top: 5px;
+    background:#e3e3e3;
+    color: #212121;
+    padding: 5px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .sessao {    
+      flex-direction: column;
+    }
+  
+    .sessao .bloco_esquerda {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  
+    .sessao .bloco_direita {
+      width: 100%;
+      margin: 0;
+    }
+    .sessao .bloco_direita .bloco_habilidade {
+      width: 100%;
+      padding: 0 0 5px 0;
+    }
+  
+    .sessao .dados_pessoais {
+      width: 100%;
+      text-align: center;
+    }
+  }
